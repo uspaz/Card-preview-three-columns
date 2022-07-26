@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+body {
+  width: 100%;
+  min-height: 100vh;
+  padding: 2.5rem 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contedor {
+  width: auto;
+  height: 100vh;
+}
+
+.card {
+  width: 21.875rem;
+  color: hsl(0, 0%, 95%);
+}
+
+.card-sedans {
+  background-color: hsl(31, 77%, 52%);
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.card-suvs {
+  background-color: hsl(184, 100%, 22%);
+  border-radius: 0px;
+}
+
+.card-luxury {
+  background-color: hsl(179, 100%, 13%);
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+h2 {
+  font-family: 'Big Shoulders Display', cursive;
+  font-size: 2.6rem;
+}
+
+
+.text {
+  color: hsla(0, 0%, 100%, 0.75);
+  font-family: 'Lexend Deca', sans-serif;
+  font-size: .9375rem;
+  line-height: 1.5625rem;
+  padding-right: 2.8125rem;
+}
+
+.btn {
+  margin-top: 100px;
+  height: 2.8125rem;
+  width: 10rem;
+  background-color: hsl(0, 0%, 95%);
+  font-family: 'Lexend Deca', sans-serif;
+}
+
+.cl-1 {
+  color: hsl(31, 77%, 52%);
+}
+
+.cl-2 {
+  color: hsl(184, 100%, 22%);
+}
+
+.cl-3 {
+  color: hsl(179, 100%, 13%);
+}
+
+.btn:hover {
+  border: 2px solid hsl(0, 0%, 95%);
+}
+
+@media (hover:hover) {
+
+  .card:hover {
+    filter: brightness(1.1);
+    transition: all ease 0.3s;
+  }
+
+  .contenedor:hover>.card:not(:hover) {
+    filter: grayscale(1.5);
+    transition: all ease 0.5s;
+  }
+}
+
+
+@media only screen and (max-width: 1200px) {
+  .card-suvs {
+    border-top-right-radius: 0.375rem;
+    border-bottom-right-radius: 0.375rem;
+  }
+
+  .card-luxury {
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0.375rem;
+    border-bottom-left-radius: .375rem;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .card-suvs {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+
+  .card-sedans {
+    border-top-right-radius: .375rem;
+    border-bottom-left-radius: 0;
+  }
+}
